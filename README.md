@@ -49,8 +49,7 @@
 * Open ports 80 and 443 on your server
 * Update project URL. Change `project_url` below, before running script.
     ```bash
-    PROJECT_URL=project_url &&\
-    find . -type f -exec sed -i 's+example.com+'${PROJECT_URL}'+g' {} \;
+    PROJECT_URL=project_url && find . -type f -exec sed -i 's+example.com+'${PROJECT_URL}'+g' {} \;
     ```
 * Create credentials to restrict public access to `prometheus`. You will be asked to provide a password. Take note of this to update prometheus.yml in a later step.
     ```bash
