@@ -24,8 +24,8 @@ server {
     ssl_certificate /etc/letsencrypt/live/prometheus.example.com/fullchain.pem;
     ssl_certificate_key /etc/letsencrypt/live/prometheus.example.com/privkey.pem;
 	
-    include /etc/letsencrypt/options-ssl-nginx.conf;
-    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
+    include /etc/letsencrypt/conf/options-ssl-nginx.conf;
+    ssl_dhparam /etc/letsencrypt/conf/ssl-dhparams.pem;
 
     location / {
         auth_basic "Prometheus";
