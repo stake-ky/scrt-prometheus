@@ -16,8 +16,6 @@ server {
     listen 443 ssl ipv6only=on;
     server_name prometheus.example.com;
 
-    resolver 127.0.0.11;
-
     access_log /var/log/nginx/prometheus-access.log;
     error_log /var/log/nginx/prometheus-error.log;
 
@@ -30,7 +28,7 @@ server {
     location / {
         auth_basic "Prometheus";
         auth_basic_user_file /etc/prometheus/.credentials;
-        proxy_pass http://localhost:26660;
+        proxy_pass http://FIND_INTERNAL_IP:26660;
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
         proxy_set_header Host $host;
         proxy_redirect off;

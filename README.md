@@ -51,6 +51,10 @@
     ```bash
     PROJECT_URL=project_url && find . -type f -exec sed -i 's+example.com+'${PROJECT_URL}'+g' {} \;
     ```
+* Add NAT for internal IP to Nginx
+    ```bash
+    sed -i 's+FIND_INTERNAL_IP+'$(hostname -I | awk '{ print $1 ; exit }')'+g' nginx/*
+    ```
 * Create credentials to restrict public access to `prometheus`. You will be asked to provide a password. Take note of this to update prometheus.yml in a later step.
     ```bash
     cd /usr/scrt/prometheus && sudo htpasswd -c .credentials admin
