@@ -10,6 +10,11 @@
         ```bash
         groups
         ```
+* Sub-domain (CNAME Record) for `prometheus`.example.com
+    - Example 
+        * Name/Host/Alias: prometheus
+        * Type: CNAME
+        * Data/Value/Destination: example.com
 
 ## Setup Process
 
