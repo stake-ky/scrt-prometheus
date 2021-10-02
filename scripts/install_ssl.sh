@@ -2,7 +2,7 @@
 
 # Project variables
 PROJECT_URL=example.com
-DOMAINS=(prometheus.${PROJECT_URL})
+DOMAINS=(node.${PROJECT_URL} miner.${PROJECT_URL})
 WEBROOT="/var/www/certbot"
 EMAIL="" # Adding a valid address is strongly recommended
 PROJECT_PATH="/usr/scrt/prometheus"

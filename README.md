@@ -19,6 +19,7 @@
         * Name/Host/Alias: miner
         * Type: CNAME
         * Data/Value/Destination: example.com
+    > You must first have an A record for `example.com` pointed to the server IP address.
 
 ## Setup Process
 
