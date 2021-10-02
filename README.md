@@ -2,6 +2,8 @@
         
 # SCRT-PROMETHEUS
 
+This repository uses docker-compose to deploy Prometheus Node Exporter and Tendermint Exporter as an overlay on a Secret Network Node.
+
 ## Prerequisites
 
 * Linux debian based Server (Our setup is is on AWS Ubuntu 20.04LTS)
