@@ -8,7 +8,7 @@ This repository uses docker-compose to deploy Prometheus Node Exporter and Tende
 
 * Linux debian based Server (Our setup is is on AWS Ubuntu 20.04LTS)
 * Install Docker and Docker-compose on the server (confirm $USER is added to docker group)
-    * Installation script provided in repository. Log out/in of sever may be required to propogate permission    
+    * [**Installation script provided**](/scripts/install_docker_git_etc.sh) in repository. Log out/in of sever may be required to propogate permission    
         ```bash
         groups
         ```
