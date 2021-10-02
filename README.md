@@ -10,9 +10,13 @@
         ```bash
         groups
         ```
-* Sub-domain (CNAME Record) for `prometheus`.example.com
-    - Example 
-        * Name/Host/Alias: prometheus
+* Sub-domain (CNAME Record) for `node`.example.com and `miner`.example.com
+    - `node`.example.com 
+        * Name/Host/Alias: node
+        * Type: CNAME
+        * Data/Value/Destination: example.com
+    - `miner`.example.com 
+        * Name/Host/Alias: miner
         * Type: CNAME
         * Data/Value/Destination: example.com
 
@@ -52,6 +56,7 @@
     ```
 ## SSL and Securing Endpoints
 * Open ports 80 and 443 on your server
+* Create CNAME records for `node`.example.com and `miner`.example.com. See [Prerequisites](#prerequisites)
 * Update project URL. Change `project_url` below, before running script.
     ```bash
     PROJECT_URL=project_url && find . -type f -exec sed -i 's+example.com+'${PROJECT_URL}'+g' {} \;
