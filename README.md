@@ -22,7 +22,7 @@ This repository uses docker-compose to deploy Prometheus Node Exporter and Tende
         * Type: CNAME
         * Data/Value/Destination: example.com
     > You must first have an A record for `example.com` pointed to the server IP address.
-* Exisiting installation of (Prometheus/Grafana Dashboard)[https://github.com/stake-ky/prometheus-grafana]
+* Exisiting installation of [Prometheus/Grafana Dashboard](https://github.com/stake-ky/prometheus-grafana)
 
 ## Setup Process
 
